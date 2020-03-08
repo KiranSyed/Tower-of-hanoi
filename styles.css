@@ -1,0 +1,61 @@
+body{
+	background-color: #000;
+}
+h1{
+	font-family: 'Bungee Inline', cursive;
+	margin: 5% 0;
+	text-align: center;
+	color: #fff;
+}
+h2{
+	font-family: 'Jacques Francois Shadow', cursive;
+	margin-bottom: 10%;
+	color: #fff;
+}
+.modal-dialog{
+	background-color: lightgrey;
+	color: #000;	
+}
+
+.fluid-container{
+	height: 350px;
+	min-width: 200px;
+	text-align: center;
+	margin: 3% 0;
+}
+.blue{
+	margin: auto;
+	background-color: blue;
+	width: 50px;
+	height: 50px;
+	opacity: 0.3;
+}
+.red{
+
+	margin: auto;
+	background-color: red;
+	width: 100px;
+	height: 50px;
+	opacity: 0.4;
+}
+.green{
+	
+	margin: auto;
+	background-color: green;
+	width: 150px;
+	height: 50px;
+	opacity: 0.4;
+}
+.yellow{
+	margin: auto;
+	background-color: gold;
+	width: 200px;
+	height: 50px;
+	opacity: 0.4;
+}
+.hidden{
+	display: none;
+}
+.selected{
+	opacity: 1;
+}

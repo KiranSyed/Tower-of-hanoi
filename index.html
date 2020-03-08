@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tower of Hanoi</title>
+	<link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+	<!-- JQuery and Bootstrap CDN--> 
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- icons from fontawesome -->
+  	<script src="https://kit.fontawesome.com/2aecc1acb9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Play background music for the game -->
+	<audio class="hidden" id="myAudio" loop="loop" autoplay >
+  	<source src="background.mp3" type="audio/mp3">
+	  Your browser does not support the audio element.
+	</audio>
+	<!-- Modal to display game rules before starting -->
+	<div class="modal in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="myModalLabel">Game Rules</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p>
+		    	<ul>
+		    		<li>You have to move all coloured blocks from tower 1 to tower 3 using tower 2 as a temporary storage</li>
+		    		<li>You can not put a bigger block on the top of a smaller one</li>
+		    	</ul>
+		    </p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<h1><i class=""></i><span>Tower of Hanoi</span><i class=""></i></h1>
+	<!-- Displaying all three towers in a horizontal row for larger screens and staking them on top of each other in case of small/medium screens -->
+	<div class="row align-items-start">
+		<!-- Tower 1 with all four color blocks displayed in the start on the game -->
+		<div class="tower1 fluid-container col-lg-4 align-items-end">
+			<h2>Tower 1</h2>
+			<div class="blue">
+			</div>
+			<div class="red">
+			</div>
+			<div class="green">
+			</div>
+			<div class="yellow">
+			</div>
+		</div>
+		<!-- Tower 2 is empty, all four blocks are invisible in the start of the game -->
+		<div class="tower2 fluid-container col-lg-4 align-items-end">
+			<h2>Tower 2</h2>
+			<div class="blue hidden">
+			</div>
+			<div class="red hidden">
+			</div>
+			<div class="green  hidden">
+			</div>
+			<div class="yellow  hidden">
+			</div>
+		</div>
+		<!-- Tower 3 is empty, all four blocks are invisible in the start of the game -->
+		<div class="tower3 fluid-container col-lg-4 align-items-end">
+			<h2>Tower 3</h2>
+			<div class="blue  hidden">
+			</div>
+			<div class="red  hidden">
+			</div>
+			<div class="green  hidden">
+			</div>
+			<div class="yellow hidden">
+				
+			</div>
+		</div>
+	</div>
+	<!-- JavaScript file linked -->
+	<script type="text/javascript" src="index.js" charset="utf-8"></script>
+
+	</body>
+</html>
